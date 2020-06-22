@@ -15,9 +15,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    //comentarios aqui
-    func muta() {
-        print("lol")
-    }
+  
 }
 
