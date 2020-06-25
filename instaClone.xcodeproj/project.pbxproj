@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465C6D6024A50DC200C1F2A8 /* FeedVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C6D5F24A50DC200C1F2A8 /* FeedVController.swift */; };
+		465C6D6324A50DF200C1F2A8 /* UploadVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C6D6224A50DF200C1F2A8 /* UploadVController.swift */; };
+		465C6D6524A50E0500C1F2A8 /* SettingVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465C6D6424A50E0500C1F2A8 /* SettingVController.swift */; };
 		467210CC24A00FA3002A191D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467210CB24A00FA3002A191D /* AppDelegate.swift */; };
 		467210CE24A00FA3002A191D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467210CD24A00FA3002A191D /* SceneDelegate.swift */; };
 		467210D024A00FA3002A191D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467210CF24A00FA3002A191D /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		3942C092A6938654A9670AF7 /* Pods-instaClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaClone.release.xcconfig"; path = "Target Support Files/Pods-instaClone/Pods-instaClone.release.xcconfig"; sourceTree = "<group>"; };
+		465C6D5F24A50DC200C1F2A8 /* FeedVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVController.swift; sourceTree = "<group>"; };
+		465C6D6224A50DF200C1F2A8 /* UploadVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVController.swift; sourceTree = "<group>"; };
+		465C6D6424A50E0500C1F2A8 /* SettingVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVController.swift; sourceTree = "<group>"; };
 		467210C824A00FA3002A191D /* instaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467210CB24A00FA3002A191D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		467210CD24A00FA3002A191D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				467210D624A00FA7002A191D /* LaunchScreen.storyboard */,
 				467210D924A00FA7002A191D /* Info.plist */,
 				467210DF24A029A3002A191D /* GoogleService-Info.plist */,
+				465C6D5F24A50DC200C1F2A8 /* FeedVController.swift */,
+				465C6D6224A50DF200C1F2A8 /* UploadVController.swift */,
+				465C6D6424A50E0500C1F2A8 /* SettingVController.swift */,
 			);
 			path = instaClone;
 			sourceTree = "<group>";
@@ -210,8 +219,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465C6D6324A50DF200C1F2A8 /* UploadVController.swift in Sources */,
+				465C6D6524A50E0500C1F2A8 /* SettingVController.swift in Sources */,
 				467210D024A00FA3002A191D /* ViewController.swift in Sources */,
 				467210CC24A00FA3002A191D /* AppDelegate.swift in Sources */,
+				465C6D6024A50DC200C1F2A8 /* FeedVController.swift in Sources */,
 				467210CE24A00FA3002A191D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

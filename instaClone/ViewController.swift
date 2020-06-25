@@ -15,12 +15,20 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func login(_ sender: UIButton) {
         performSegue(withIdentifier: "toFeedVC", sender: nil)
+//        if emailText.text != "" && passwordText.text != ""{
+//
+//        }else{
+//
+//        }
     }
+    
+    
     @IBAction func register(_ sender: UIButton) {
         
         if emailText.text != "" && passwordText.text != "" {
