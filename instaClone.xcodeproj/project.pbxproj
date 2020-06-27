@@ -17,6 +17,7 @@
 		467210D524A00FA7002A191D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467210D424A00FA7002A191D /* Assets.xcassets */; };
 		467210D824A00FA7002A191D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467210D624A00FA7002A191D /* LaunchScreen.storyboard */; };
 		467210E024A029A3002A191D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 467210DF24A029A3002A191D /* GoogleService-Info.plist */; };
+		46ED6AD724A7062E00216539 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED6AD624A7062E00216539 /* FeedCell.swift */; };
 		4A74DD65F6313DDD1C2DAC68 /* Pods_instaClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA85ADA15B5B408B9EB0FF8 /* Pods_instaClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		467210D724A00FA7002A191D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		467210D924A00FA7002A191D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		467210DF24A029A3002A191D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46ED6AD624A7062E00216539 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		CAD77A5D13E786DAC67B18D2 /* Pods-instaClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaClone.debug.xcconfig"; path = "Target Support Files/Pods-instaClone/Pods-instaClone.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA85ADA15B5B408B9EB0FF8 /* Pods_instaClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				467210CB24A00FA3002A191D /* AppDelegate.swift */,
 				467210CD24A00FA3002A191D /* SceneDelegate.swift */,
 				467210CF24A00FA3002A191D /* ViewController.swift */,
+				46ED6AD624A7062E00216539 /* FeedCell.swift */,
 				467210D124A00FA3002A191D /* Main.storyboard */,
 				467210D424A00FA7002A191D /* Assets.xcassets */,
 				467210D624A00FA7002A191D /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46ED6AD724A7062E00216539 /* FeedCell.swift in Sources */,
 				465C6D6324A50DF200C1F2A8 /* UploadVController.swift in Sources */,
 				465C6D6524A50E0500C1F2A8 /* SettingVController.swift in Sources */,
 				467210D024A00FA3002A191D /* ViewController.swift in Sources */,

@@ -13,24 +13,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+      
     }
     
+    
     @IBAction func login(_ sender: UIButton) {
-        performSegue(withIdentifier: "toFeedVC", sender: nil)
-//        if emailText.text != "" && passwordText.text != ""{
-//
-//        }else{
-//
-//        }
+        if emailText.text != "" && passwordText.text != ""{
+            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
+                if error != nil {
+                    self.errorAlert(errorInput: "Error!", messageInput: error?.localizedDescription ?? "Firebase Error")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        }else{
+
+        }
     }
     
     
     @IBAction func register(_ sender: UIButton) {
-        
         if emailText.text != "" && passwordText.text != "" {
             Auth.auth().createUser(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
                 if error != nil{
@@ -40,11 +46,9 @@ class ViewController: UIViewController {
                 }
             }
             
-            
         }else{
            errorAlert(errorInput: "Error!", messageInput: "username/password")
         }
-        
     }
     
     

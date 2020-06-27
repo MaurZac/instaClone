@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingVController: UIViewController {
 
@@ -17,7 +18,13 @@ class SettingVController: UIViewController {
     }
       
     @IBAction func toVC(_ sender: UIButton) {
-        performSegue(withIdentifier: "toVController", sender: nil)
+        do{
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "toVController", sender: nil)
+        }catch{
+           print("error")
+        }
+        
     }
     
     /*

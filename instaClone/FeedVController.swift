@@ -10,6 +10,8 @@ import UIKit
 
 class FeedVController: UIViewController {
 
+    @IBOutlet weak var tableVi: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
