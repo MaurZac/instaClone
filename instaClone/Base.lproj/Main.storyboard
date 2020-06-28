@@ -175,45 +175,68 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="459"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="usermail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="196-6P-ipg">
-                                                    <rect key="frame" x="20" y="11" width="374" height="42"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Comment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amc-vi-t8k">
+                                                    <rect key="frame" x="20" y="326" width="374" height="34"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="gS2-6d-OBg"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amc-vi-t8k">
-                                                    <rect key="frame" x="20" y="373" width="374" height="34"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsO-HW-ok8">
-                                                    <rect key="frame" x="28" y="415" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsO-HW-ok8">
+                                                    <rect key="frame" x="28" y="371" width="30" height="30"/>
                                                     <state key="normal" title="Like"/>
                                                     <connections>
                                                         <action selector="likeBtnSelected:" destination="eUX-qP-jff" eventType="touchUpInside" id="Jex-IF-J0e"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxr-aL-eya">
-                                                    <rect key="frame" x="309" y="415" width="78" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxr-aL-eya">
+                                                    <rect key="frame" x="309" y="375" width="78" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="78" id="mWd-rg-24Z"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-gj-aO8">
-                                                    <rect key="frame" x="20" y="68" width="374" height="290"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5f-gj-aO8">
+                                                    <rect key="frame" x="20" y="86" width="374" height="230"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usermail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="196-6P-ipg">
+                                                    <rect key="frame" x="20" y="36" width="374" height="42"/>
+                                                    <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="ydU-LJ-aQq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wxr-aL-eya" firstAttribute="baseline" secondItem="hsO-HW-ok8" secondAttribute="firstBaseline" id="07N-1A-6Ns"/>
+                                                <constraint firstItem="196-6P-ipg" firstAttribute="top" secondItem="XzE-yT-R1s" secondAttribute="topMargin" constant="25" id="1o3-PQ-M8o"/>
+                                                <constraint firstItem="hsO-HW-ok8" firstAttribute="leading" secondItem="XzE-yT-R1s" secondAttribute="leadingMargin" constant="8" id="3ml-6S-OnB"/>
+                                                <constraint firstItem="j5f-gj-aO8" firstAttribute="leading" secondItem="amc-vi-t8k" secondAttribute="leading" id="EFa-7U-hMT"/>
+                                                <constraint firstItem="hsO-HW-ok8" firstAttribute="centerY" secondItem="wxr-aL-eya" secondAttribute="centerY" id="FXy-Ks-1Gb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hsO-HW-ok8" secondAttribute="bottom" constant="47" id="QpB-au-bxB"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wxr-aL-eya" secondAttribute="trailing" constant="7" id="WDn-Ba-XEM"/>
+                                                <constraint firstItem="196-6P-ipg" firstAttribute="trailing" secondItem="XzE-yT-R1s" secondAttribute="trailingMargin" id="Z6X-lc-vl6"/>
+                                                <constraint firstItem="hsO-HW-ok8" firstAttribute="baseline" secondItem="wxr-aL-eya" secondAttribute="baseline" id="ZEm-jC-Kum"/>
+                                                <constraint firstItem="196-6P-ipg" firstAttribute="leading" secondItem="j5f-gj-aO8" secondAttribute="leading" id="e2e-z4-Bf9"/>
+                                                <constraint firstItem="wxr-aL-eya" firstAttribute="top" secondItem="amc-vi-t8k" secondAttribute="bottom" constant="15" id="fjV-Lu-rhd"/>
+                                                <constraint firstItem="196-6P-ipg" firstAttribute="leading" secondItem="XzE-yT-R1s" secondAttribute="leadingMargin" id="kxd-dz-fLP"/>
+                                                <constraint firstItem="j5f-gj-aO8" firstAttribute="trailing" secondItem="amc-vi-t8k" secondAttribute="trailing" id="lDY-Mm-Fge"/>
+                                                <constraint firstItem="amc-vi-t8k" firstAttribute="top" secondItem="j5f-gj-aO8" secondAttribute="bottom" constant="10" id="mHW-JA-RQv"/>
+                                                <constraint firstItem="j5f-gj-aO8" firstAttribute="top" secondItem="196-6P-ipg" secondAttribute="bottom" constant="8" id="mXD-Df-3uF"/>
+                                                <constraint firstItem="196-6P-ipg" firstAttribute="trailing" secondItem="j5f-gj-aO8" secondAttribute="trailing" id="mtW-Xi-LP6"/>
+                                                <constraint firstItem="hsO-HW-ok8" firstAttribute="top" secondItem="amc-vi-t8k" secondAttribute="bottom" constant="11" id="rj2-2K-ymG"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="amc-vi-t8k" id="tFb-wJ-SIQ"/>
-                                            <outlet property="likeBtn" destination="hsO-HW-ok8" id="8kn-fw-hwR"/>
                                             <outlet property="likeLabel" destination="wxr-aL-eya" id="Ea2-4v-dfF"/>
                                             <outlet property="usrEmailLabel" destination="196-6P-ipg" id="G2o-td-PEh"/>
                                             <outlet property="usrImgView" destination="j5f-gj-aO8" id="Msu-PH-kz0"/>

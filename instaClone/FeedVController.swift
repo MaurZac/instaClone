@@ -8,25 +8,31 @@
 
 import UIKit
 
-class FeedVController: UIViewController {
+class FeedVController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+   
+    
 
     @IBOutlet weak var tableVi: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableVi.delegate = self
+        tableVi.dataSource =  self
 
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           return 5
+       }
+       
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell  = tableVi.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
+        cell.usrEmailLabel.text = "test@email.com"
+        cell.likeLabel.text = "0"
+        cell.commentLabel.text = "comment ok"
+        cell.usrImgView.image = UIImage(named: "select.png")
+        return cell
+       }
 
 }
